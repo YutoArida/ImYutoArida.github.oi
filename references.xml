@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<references>
+    <people>
+        <name>Ramona Medina</name>
+        <occupation>Teacher II</occupation>
+        <contactNo>09505554561</contactNo>
+    </people>
+    <people>
+        <name>Ronaldo Banayad</name>
+        <occupation>Manager</occupation>
+        <contactNo>09335937003</contactNo>
+    </people>
+    <people>
+        <name>Ivan Santiago</name>
+        <occupation>Engineer</occupation>
+        <contactNo>09325262937</contactNo>
+    </people>
+</references>

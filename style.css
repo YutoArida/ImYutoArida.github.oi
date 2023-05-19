@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    text-decoration: none;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #ffffff;
+}
+hr {
+    margin: 0;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 50px;
+    background-color: #16162f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
+    outline: none;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+span {
+    color: #b51a2b;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    list-style-type: none;
+}
+
+ul a {
+    padding: 10px 10px;
+    margin: 5px;
+    color: #ffffff;
+    font-size: 20px;
+    outline: none;
+    text-decoration: none;
+}
+
+ul a:hover,
+ul a.active{
+    color: #b51a2b;
+}
+
+#menu-icon {
+    color: #ffffff;
+    font-size: 30px;
+    display: none;
+}
+
+section {
+    background-color: #242f49;
+    height: 100vh;
+    padding: 100px 50px;
+}
+
+/*home section start*/
+
+.home {
+    background-image: url("images/home1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.home-content {
+    padding: 0 50px;
+}
+
+.home-content h3 {
+    font-size: 30px;
+    font-weight:700;
+}
+
+.home-content h1 {
+    font-size: 60px;
+    font-weight:700;
+    line-height: 1.3;
+}
+
+.home-content .social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #b51a2b;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    margin: 5px;
+    border: 2px solid #b51a2b;
+    border-radius: 50%;
+}
+
+.home-content .social-media a:hover {
+    color: #000000;
+    border: 2px solid #b51a2b;
+    background-color: #b51a2b;
+}
+
+.btn {
+    color: #000000;
+    background-color: #b51a2b;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 20px 2px #b51a2b;
+}
+
+.btn:hover {
+    color: #000000;
+    background-color: #b51a2b;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 30px;
+    box-shadow: none;
+}
+
+/*home section end*/
+
+/*about section start*/
+
+.about h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 60px;
+}
+
+.about-container div {
+    margin: 50px;
+}
+
+.about-image img {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    display: inline;
+    border: 2px solid #b51a2b;
+    box-shadow: 1px 1px 20px 2px #b51a2b;
+}
+
+.read-more-text {
+    display: none;
+    color: #ffffff;
+}
+
+.read-more-text--show {
+    display: inline;
+}
+
+/*about section end*/
+
+/*education section start*/
+.education h1 {
+    font-weight: 700;
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.education-container .education-tabs {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.education-container .education-tabs .education-button {
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.education-container .education-tabs .education-button:hover {
+    color: #b51a2b;
+}
+
+.education-container .education-tabs .education-button.education-active {
+    color: #b51a2b;
+}
+
+.education-sections {
+    justify-content: center;
+    margin: 50px 0px;
+}
+
+.education-data {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+}
+
+.education-data h3 {
+    font-size: x-large;
+}
+
+.education-data p,
+.education-data span {
+    margin-bottom: 0px;
+    color: #ffa586;
+}
+
+.education-data .education-calendar {
+    font-size: 15px;
+    color: #b51a2b;
+}
+
+.education-rounder {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #b51a2b;
+    border-radius: 50%;
+}
+
+.education-line {
+    display: block;
+    width: 2px;
+    height: 100%;
+    background-color: #b51a2b;
+    transform: translate(6px, -7px);
+}
+
+.education [data-content]{
+    display: none;
+}
+
+.education-active[data-content]{
+    display: block;
+}
+/*education section end*/
+
+/*skills section start*/
+    .skills h1 {
+        text-align: center;
+        font-weight: 700;
+        margin-top: 20px;
+    }
+
+    .skills_tabs{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .skills_title{
+        font-size: 25px;
+        font-weight: 600;
+        padding-left: 160px;
+        padding-right: 128px;
+        justify-content: center;
+    }
+
+    .skill_main{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 50px;
+        grid-row-gap: 20px;
+    }
+
+    .skill_main .skill_bar {
+        padding: 5px;
+        transition: 1s;
+    }
+
+    .skill_main .skill_bar:hover {
+        transform: scale(1.1);
+        padding: 20px;
+        border-radius: 50px;
+        border: 3px solid #b51a2b;
+    }
+
+    .skill_main .skill_bar .info{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+    .skill_bar .info .percent{
+        font-weight: bold;
+    }
+    .skill_bar .bar{
+        width: 100%;
+        height: 10px;
+        position: relative;
+        background-color: #384358;
+        border-radius: 25px;
+        margin-top: 5px;
+    }
+    .skill_bar .bar span{
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        background-color: #b51a2b;
+        border-radius: 25px;
+        box-shadow: 1px 1px 20px 2px #b51a2b;
+    }
+    .skill_bar .bar .criticalThinking{
+        width: 90%;
+    }
+    
+    .skill_bar .bar .teamPlayer{
+        width: 90%;
+    }
+
+    .skill_bar .bar .problemSolving{
+        width: 85%;
+    }
+
+    .skill_bar .bar .adoptability{
+        width: 85%;
+    }
+
+    .skill_bar .bar .communication{
+        width: 70%;
+    }
+
+    .skill_bar .bar .sql{
+        width: 80%;
+    }
+
+    .skill_bar .bar .html{
+        width: 90%;
+    }
+    .skill_bar .bar .css{
+        width: 83%;
+    }
+    .skill_bar .bar .js{
+        width: 60%;
+    }
+
+    .skill_bar .bar .php{
+        width: 56%;
+    }
+/*skills section end*/
+
+/*certificate section start*/
+.certificate h1 {
+    font-weight: 700;
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.certificate-container a img {
+    width: 280px;
+    height: 200px;
+    margin: 20px 31px;
+    object-fit: cover;
+    transition: 1s;
+    border: 2px solid #b51a2b;
+}
+
+.certificate-container a img:hover{
+    border: none;
+    box-shadow: 1px 1px 20px 2px #b51a2b;
+    transform: scale(1.1);
+}
+
+/*certification section end*/
+
+
+/*references section start*/
+
+.references h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.references .references-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.references .references-container .references-box {
+    background-color: #384358;
+    padding: 30px;
+    margin: 70px 25px;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.references .references-container .references-box:hover {
+    border:2px solid #b51a2b;
+    box-shadow: 1px 1px 20px 2px #b51a2b;
+}
+
+.references-box i {
+    display: block;
+    margin: auto;
+    margin-bottom: 35px;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    font-size: 65px;
+}
+
+table, tr, td {
+    padding: 10px;
+}
+
+/*references section end*/
